@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="/">Quay lại</a>
+        <h2 style="color: green;">Thêm sản phẩm mới</h2>
+        <form action="/add" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Tên sản phẩm:</label>
+            <input type="text" class="form-control" id="name" placeholder="Nhập tên sản phẩm" name="name">
+          </div>
+          <div class="form-group">
+            <label for="price">Giá sản phẩm:</label>
+            <input type="number" class="form-control" id="price" placeholder="Nhập giá sản phẩm" name="price">
+          </div>
+          <div class="form-group">
+            <label for="image">Hình ảnh:</label>
+            <input type="file" class="form-control" id="image" placeholder="Select image" name="image">
+          </div>
+          <div class="form-group">
+            <label for="desc">Mô tả:</label>
+            <input type="text" class="form-control" id="desc" placeholder="Nhập mô tả sản phẩm" name="desc">
+          </div>
+          <button type="submit" class="btn btn-success px-5">Thêm sản phẩm</button>
+        </form>
+      </div>
+
+</body>
+
+</html>
