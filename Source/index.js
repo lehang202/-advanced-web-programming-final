@@ -14,4 +14,9 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
     return res.end('login');
 })
+
+app.get('/user-profile', (req, res) => {
+    return res.end('user-profile');
+})
+
 app.listen(8080, () => console.log('http://localhost:8080'))
