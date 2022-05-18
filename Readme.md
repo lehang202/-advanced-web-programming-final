@@ -5,13 +5,14 @@ Lập trình web nâng cao
 
  npm install express
 
+ npm install ejs
 
-npm install ejs
+ npm install nodemon
 
 ## cách để chạy chương trình
 
  node index.js 
- 
+
 
 _Lưu ý nếu phải vào trong folder đó, nếu sử dụng visual studio code kiểm tra xem có trong thư mục đó không, nếu không thì  **cd Source**_
 

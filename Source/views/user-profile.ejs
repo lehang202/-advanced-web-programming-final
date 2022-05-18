@@ -17,6 +17,19 @@
         font-size: 14px;
     }
 </style>
+<include src="./menu_area.ejs"></include>
+
+<header>
+    <% include ./menu_area %>
+</header>
+
+<header>
+    <%- include('menu_area'); %>
+</header>
+
+<header>
+    <%- include('header'); %>
+</header>
 
 <div class="container">
     <h3 class="mt-5 mb-3 text-center text-primary">Đăng nhập</h2>
@@ -37,7 +50,18 @@
                      
                     </div>
      
-                
+                    <div class="common-pre-dz">
+                        <h4 class="comon-method">Comon method</h4>
+                        <p>
+                            You can upload new image to crop.
+                        </p>
+                        <div class="btn-group images-cropper-pro">
+                            <label title="Upload image file" for="inputImage" class="btn btn-primary img-cropper-cp">
+                                    <input type="file" accept="image/*" name="file" id="inputImage" class="hide"> Upload new image
+                                </label>
+                            <label title="Donload image" id="download" class="btn btn-primary">Download</label>
+                        </div>
+                    </div>
                 <button class="btn btn-primary" id="btSubmit" type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>

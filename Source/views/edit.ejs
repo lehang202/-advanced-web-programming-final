@@ -16,8 +16,7 @@
     <div class="container">
         <h2>Thêm sản phẩm</h2>
         <form action="/edit/<%=slug%>" method="post">
-            <% products.forEach(function(product){ 
-                if(product.id==slug){%>
+            
 
                 <div class="form-group">
                     <label for="name">Tên sản phẩm:</label>
@@ -35,7 +34,7 @@
                     <label for="desc">Mô tả:</label>
                     <input type="text" class="form-control" id="desc" value="<%= product.desc %>" name="ndesc">
                 </div>
-                <% }}); %>
+                
                     <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
